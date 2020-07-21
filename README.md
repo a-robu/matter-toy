@@ -21,6 +21,8 @@ Run development server.
 parcel index.html
 ```
 
+A development server should now be running at http://localhost:1234/.
+
 Now, connect an Xbox 360 controller and move the joysticks. The two boxes now move.
 
 # Notes
