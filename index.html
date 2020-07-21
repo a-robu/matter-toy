@@ -1,0 +1,32 @@
+<meta charset='utf-8' /> 
+<html>
+<head>
+    <title>Matter Toy</title>
+</head>
+<body>
+    <div class='drawing-area'>
+        <div class='overlay-ui'>
+            <ul class='controller-names'>
+            </ul>
+        </div>
+        <canvas></canvas>
+    </div>
+    <script src='./index.js'></script>
+    <style>
+        .drawing-area {
+            position: relative;
+            width: min-content;
+        }
+
+        .overlay-ui {
+            /* background-color: rgba(255, 0, 0, 0.5); */
+            outline: solid 2px pink;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</body>
+</html>
