@@ -21,7 +21,7 @@ Run development server.
 parcel index.html
 ```
 
-Now, connect an Xbox 360 controller and move the joysticks.
+Now, connect an Xbox 360 controller and move the joysticks. The two boxes now move.
 
 # Notes
 
