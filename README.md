@@ -1,43 +1,28 @@
 
 # Introduction
 
-This repo is a tryout of:
-- Matter.js physics,
-- applying forces with Gamepad,
-- using Parcel for browser asset bunding.
+This repo is mostly a copy-pasting of code snippets from:
+- the _Matter.js_ [Getting started](https://github.com/liabru/matter-js/wiki/Getting-started) and [Rendering](https://github.com/liabru/matter-js/wiki/Rendering) documentation pages.
+- and a bit from the [Gamepad API page](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API) on MDN.
+
+It is a minimal example showing forces being applied from a Gamepad on `matter-js` objects, using `parcel` for browser bundling.
 
 # Usage
 
-Run the live dev server with `parcel`.
+Ensure `parcel` is installed.
 
 ```bash
-npm i -g parcel-bundler
+npm install -g parcel-bundler
+```
+
+Run development server.
+
+```
 parcel index.html
 ```
 
-Connect a controller (Xbox 360 known to work) and move the joysticks.
+Now, connect an Xbox 360 controller and move the joysticks.
 
-# Snippets
+# Notes
 
-The neat experiments GUI library is _Dat.GUI_. Here's a snippet for  it.
-
-## Dat.GUI
-
-```javascript
-var FizzyText = function() {
-    this.message = 'dat.gui';
-    this.speed = 0.8;
-    this.displayOutline = false;
-    // this.explode = function() { ... };
-    // Define render logic ...
-  };
-  
-  window.onload = function() {
-    var text = new FizzyText();
-    var gui = new dat.GUI();
-    gui.add(text, 'message');
-    gui.add(text, 'speed', -5, 5);
-    gui.add(text, 'displayOutline');
-    gui.add(text, 'explode');
-  };
-```
+This experiment may later have parameters and _Dat.GUI_ is a useful thing to use for that case.
