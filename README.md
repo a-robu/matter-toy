@@ -28,3 +28,26 @@ Now, connect an Xbox 360 controller and move the joysticks. The two boxes now mo
 # Notes
 
 This experiment may later have parameters and _Dat.GUI_ is a useful thing to use for that case.
+
+# Jupyter Notebooks
+
+I am wondering about whether it is worth doing "integration" tests in Jupyter notebooks (as a way to manage built states and sample data and keep them close to program outputs).
+
+To that end, there is a sample notebook that can run Javascript code with iJavascript.
+
+For this, `python` (Python 3), `npm` and `node` must be present.
+
+To install Jupyter with the iJavascript kernel, run the following command.
+
+```bash
+npm install
+./setup-ijavascript
+```
+
+Now it's possible to run the notebook server with the following command.
+
+```bash
+./venv/bin/jupyter notebook
+```
+
+A browser window should have opened and it is now possible to run the `fetch-and-show-png.ipynb` notebook and gase upon its glory.
