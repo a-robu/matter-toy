@@ -14,9 +14,9 @@ jobs:
       - run: docker --version
       - run: docker-compose build
       - run: |
-        docker-compose run notebook npx \
-          jupyter nbconvert --to html --execute notebooks/*.ipynb \
-            --output-dir notebooks/build
+          docker-compose run notebook npx \
+            jupyter nbconvert --to html --execute notebooks/*.ipynb \
+              --output-dir notebooks/build
       - uses: actions/upload-artifact@v2
         with:
           name: notebooks
