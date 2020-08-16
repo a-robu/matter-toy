@@ -50,7 +50,7 @@ Now it's possible to run the notebook server with the following command.
 ./venv/bin/jupyter notebook
 ```
 
-A browser window should have opened and it is now possible to run the `fetch-and-show-png.ipynb` notebook and gase upon its glory.
+A browser window should have opened and it is now possible to run the `fetch-and-show-png.ipynb` notebook and gaze upon its glory.
 
 # Podman
 
