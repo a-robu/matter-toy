@@ -1,9 +1,11 @@
 
-const assert = require('assert')
+class WrongDimensions extends Error {}
 
 class Vec extends Array {
     constructor(...args) {
-        assert.equal(args.length, 2, 'x and y are required')
+        if (args.length != 2) {
+            throw new WrongDimensions('x and y are required')
+        }
         super(...args)
     }
 
