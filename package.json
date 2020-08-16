@@ -12,7 +12,9 @@
     "@src": "./src"
   },
   "devDependencies": {
-    "jasmine": "^3.6.1"
+    "jest": "^26.4.0"
   },
-  "scripts": { "test": "jasmine" }
+  "scripts": {
+    "test": "jest"
+  }
 }

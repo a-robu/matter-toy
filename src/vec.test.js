@@ -1,6 +1,5 @@
 
-require('module-alias/register')
-const Vec = require('@src/vec')
+const Vec = require('./vec')
 
 describe('Vec', () => {
     describe('== equality', () => {
