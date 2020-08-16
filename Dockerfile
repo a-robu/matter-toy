@@ -26,7 +26,7 @@ RUN npx ijsinstall
 COPY notebooks /app/notebooks
 
 # NOTE that it is possible to make jupyter notebook less verbose with
-# the --log-level=CRITICAL flag.
+# the --log-level=CRITICAL option.
 
 CMD ["npx", "jupyter", "notebook", \
         "--allow-root", "--ip=0.0.0.0", "--port=8080", \
