@@ -7,15 +7,27 @@ This repo is mostly a copy-pasting of code snippets from:
 
 It is a minimal example showing forces being applied from a Gamepad on `matter-js` objects, using `parcel` for browser bundling.
 
-# Usage
+# Using with Docker
 
-Ensure `parcel` is installed.
+The easiest way to run this is from the `Dockerfile`.
+
+```bash
+docker-compose up --build -d
+```
+
+# Using directly
+
+Alternatively, it's possible to run this without Docker, by installing the necessary commands manually.
+
+## Parcel
+
+Install `parcel` with the following command.
 
 ```bash
 npm install -g parcel-bundler
 ```
 
-Run development server.
+Now, the development server can be run with the following command.
 
 ```
 parcel index.html
