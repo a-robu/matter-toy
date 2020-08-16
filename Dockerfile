@@ -24,6 +24,7 @@ RUN python -m pip install jupyter
 RUN npx ijsinstall
 
 COPY notebooks /app/notebooks
+COPY src /app/src
 
 # NOTE that it is possible to make jupyter notebook less verbose with
 # the --log-level=CRITICAL option.
