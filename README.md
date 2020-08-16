@@ -47,7 +47,7 @@ npm install
 Now it's possible to run the notebook server with the following command.
 
 ```bash
-./venv/bin/jupyter notebook
+npx ./venv/bin/jupyter notebook
 ```
 
 A browser window should have opened and it is now possible to run the `fetch-and-show-png.ipynb` notebook and gaze upon its glory.
