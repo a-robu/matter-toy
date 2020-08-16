@@ -63,22 +63,3 @@ npx ./venv/bin/jupyter notebook
 ```
 
 A browser window should have opened and it is now possible to run the `fetch-and-show-png.ipynb` notebook and gaze upon its glory.
-
-# Podman
-
-I am using this repo an opportunity to try using Podman to run tests in CI.
-
-Instructions for installing Podman on Ubuntu can be found on the [installation page](https://podman.io/getting-started/installation#ubuntu). And here are the commands, reproduced for convenience.
-
-> ```bash
-> . /etc/os-release
-> echo "deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/> xUbuntu_${VERSION_ID}/ /" | sudo tee /etc/apt/sources.list.d/> devel:kubic:libcontainers:stable.list
-> curl -L https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/> xUbuntu_${VERSION_ID}/Release.key | sudo apt-key add -
-> sudo apt-get update -qq
-> sudo apt-get -qq -y install podman
-> ```
-
-```bash
-$ podman --version
-podman version 2.0.4
-```
