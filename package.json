@@ -10,5 +10,9 @@
   },
   "_moduleAliases": {
     "@src": "./src"
-  }
+  },
+  "devDependencies": {
+    "jasmine": "^3.6.1"
+  },
+  "scripts": { "test": "jasmine" }
 }
