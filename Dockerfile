@@ -25,6 +25,7 @@ RUN npx ijsinstall
 
 COPY notebooks /app/notebooks
 COPY src /app/src
+COPY spec /app/spec
 
 # NOTE that it is possible to make jupyter notebook less verbose with
 # the --log-level=CRITICAL option.

@@ -20,3 +20,10 @@ jobs:
         with:
           name: notebooks
           path: notebooks/build
+  test:
+    needs: build
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - run: docker --version
+      - run: docker-compose run notebook npm test
