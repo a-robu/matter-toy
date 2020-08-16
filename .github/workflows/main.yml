@@ -4,8 +4,12 @@ on: push
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - uses: satackey/action-docker-layer-caching@v0.0.8
+      # We would like to use layer caching, but the directive causes the build
+      # to fail with an error.
+      #   https://github.com/a-robu/matter-toy/runs/990356187
+      #   - uses: satackey/action-docker-layer-caching@v0.0.8
       - run: docker --version
+      - run: docker build .
