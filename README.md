@@ -15,6 +15,8 @@ The easiest way to run this is from the `Dockerfile`.
 docker-compose up --build -d
 ```
 
+There is now a Jupyter server listening on http://localhost:8080.
+
 # Using directly
 
 Alternatively, it's possible to run this without Docker, by installing the necessary commands manually.
