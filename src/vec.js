@@ -20,6 +20,15 @@ class Vec extends Array {
     scale(scalar) {
         return new Vec(this.x * scalar, this.y * scalar)
     }
+
+    static fromObject(obj) {
+        return new Vec(obj.x, obj.y)
+    }
+
+    /* Alternative notation V(1, 2) instead of new Vec(1, 2). */
+    static V(...args) {
+        return new Vec(...args)
+    }
 }
 
 module.exports = Vec

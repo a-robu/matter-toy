@@ -3,15 +3,15 @@ const Vec = require('./vec')
 
 describe('Vec', () => {
     describe('== equality', () => {
-        it('can equal a regular Array', () => {
+        it('can be equal to regular Array', () => {
             expect(new Vec(1, 2)).toEqual([1, 2])
         })
     
-        it('it can be equal to another Vec', () => {
+        it('can be equal to another Vec', () => {
             expect(new Vec(1, 2)).toEqual(new Vec(1, 2))
         })
     
-        it('differs from other Vecs if the elements are different', () => {
+        it('does not equal if an element differs', () => {
             expect(new Vec(1, 2)).not.toEqual(new Vec(-100, 2))
         })
     })
@@ -24,8 +24,20 @@ describe('Vec', () => {
     })
 
     describe('.scale', () => {
-        it('can make bigger', () => {
+        it('can make the Vec bigger', () => {
             expect((new Vec(1, 2)).scale(2)).toEqual(new Vec(2, 4))
+        })
+    })
+
+    describe('.fromObject', () => {
+        it('can pick out the .x and .y props', () => {
+            expect(Vec.fromObject({x: 1, y: 2})).toEqual(new Vec(1, 2))
+        })
+    })
+
+    describe('V()', () => {
+        it('is interchangeable shorthand notation', () => {
+            expect(Vec.V(1, 2)).toEqual(new Vec(1, 2))
         })
     })
 })
