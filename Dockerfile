@@ -23,6 +23,8 @@ RUN python -m pip install jupyter
 
 RUN npx ijsinstall
 
+COPY jupyter_notebook_config.py /jupyter_notebook_config.py
+
 COPY notebooks /app/notebooks
 COPY src /app/src
 
@@ -32,4 +34,5 @@ COPY src /app/src
 CMD ["npx", "jupyter", "notebook", \
         "--allow-root", "--ip=0.0.0.0", "--port=8080", \
         "--NotebookApp.custom_display_url=http://localhost:8080", \
+        "--config=/jupyter_notebook_config.py", "--no-browser", \
         "--NotebookApp.token=''", "--notebook-dir=/app/notebooks"]
