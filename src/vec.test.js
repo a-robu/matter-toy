@@ -35,6 +35,12 @@ describe('Vec', () => {
         })
     })
 
+    describe('.add', () => {
+        it('adds the individual .x and .y components', () => {
+            expect((new Vec(1, 2)).add(new Vec(-3, 0))).toEqual(new Vec(-2, 2))
+        })
+    })
+
     describe('V()', () => {
         it('is interchangeable shorthand notation', () => {
             expect(Vec.V(1, 2)).toEqual(new Vec(1, 2))

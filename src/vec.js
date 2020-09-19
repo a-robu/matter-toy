@@ -21,6 +21,10 @@ class Vec extends Array {
         return new Vec(this.x * scalar, this.y * scalar)
     }
 
+    add(other) {
+        return new Vec(this.x + other.x, this.y + other.y)
+    }
+
     static fromObject(obj) {
         return new Vec(obj.x, obj.y)
     }
